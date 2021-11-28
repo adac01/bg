@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <title>Adarsh | bg images animation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Adarsh Chavhan">
+        <base href="assets/imgs/">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono&display=swap');
+            *{
+                padding: 0;
+                margin:0;
+                box-sizing:border-box;
+                background-color: #f5f5f5;
+                overflow-x: hidden;
+            }
+            footer{
+                font-family: 'Roboto Mono', monospace;
+                color: gray;
+                font-size: 12px;
+                text-align: center;
+                padding: 10px 0px;
+                line-height: 20px;
+            }
+            .div1{
+                width: 100vw;
+                height: 100vh;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .div1 .bg{
+                width: 920px;   height: 370px;
+                background-image: url("m1.jpg"), url("m2.jpg"), url("m3.jpg");
+                background-size:600px 370px, 400px 180px, 400px 180px;
+                background-position:0px 0px, 610px 0px, 610 190px;
+                background-color: transparent;
+                background-repeat: no-repeat;
+                filter:drop-shadow(10px 10px 10px #c0c0c0);
+                animation:go 40s ease-in-out infinite;
+            }
+            @keyframes go{
+                /* Background 1 */
+                0%{
+                    width: 920px;   height: 370px;
+                    background-image: url("m1.jpg"), url("m2.jpg"), url("m3.jpg");
+                    background-size:600px 370px, 400px 180px, 400px 180px;
+                    background-position:0px 0px, 610px 0px, 610 190px;
+                }
+                11%{
+                    width: 920px;   height: 370px;
+                    background-image: url("m1.jpg"), url("m2.jpg"), url("m3.jpg");
+                    background-size:600px 370px, 400px 180px, 400px 180px;
+                    background-position:0px 0px, 610px 0px, 610 190px;
+                }
+                /* Background 2 */
+                16%{
+                    width: 370px;   height: 370px;
+                    background-image: url("b1.jpg"), url("b2.jpg"), url("b3.jpg");
+                    background-size:370px 180px, 180px 180px, 180px 180px;
+                    background-position: 0px 0px,0px  190px, 190px 190px;
+                }
+                44%{
+                    width: 370px;   height: 370px;
+                    background-image: url("b1.jpg"), url("b2.jpg"), url("b3.jpg");
+                    background-size:370px 180px, 180px 180px, 180px 180px;
+                    background-position: 0px 0px,0px  190px, 190px 190px;
+                }
+                /* Background 3 */
+                49%{
+                    width: 370px;   height: 370px;
+                    background-image: url("a1.jpg"), url("a2.jpg"), url("a3.jpg");
+                    background-size:170px 170px, 170px 170px, 170px 170px;
+                    background-position:0px 80px, 180px 0px, 180 180px;
+                }
+                79%{
+                    width: 370px;   height: 370px;
+                    background-image: url("a1.jpg"), url("a2.jpg"), url("a3.jpg");
+                    background-size:170px 170px, 170px 170px, 170px 170px;
+                    background-position:0px 80px, 180px 0px, 180 180px;
+                }
+                /* Background 1 */
+                84%{
+                    width: 920px;   height: 370px;
+                    background-image: url("m1.jpg"), url("m2.jpg"), url("m3.jpg");
+                    background-size:600px 370px, 400px 180px, 400px 180px;
+                    background-position:0px 0px, 610px 0px, 610 190px;
+                }
+            }
+
+            /*-----------------------------------------------
+            For Small Screen Devices
+            -----------------------------------------------*/
+            @media screen and (max-width: 600px) {
+                .div1 .bg{
+                width: 320px;   height: 120px;
+                background-image: url("m1.jpg"), url("m2.jpg"), url("m3.jpg");
+                background-size:200px 120px, 110px 60px, 110px 60px;
+                background-position:0px 0px, 210px 0px, 210px 70px;
+                background-repeat: no-repeat;
+                filter:drop-shadow(10px 10px 10px #c0c0c0);
+                animation:go 20s ease-in-out infinite;
+            }
+            @keyframes go{
+                /* Background 1 */
+                0%{
+                    width: 320px;   height: 120px;
+                    background-image: url("m1.jpg"), url("m2.jpg"), url("m3.jpg");
+                    background-size:200px 120px, 110px 60px, 110px 60px;
+                    background-position:0px 0px, 210px 0px, 210px 70px;
+                }
+                11%{
+                    width: 320px;   height: 120px;
+                    background-image: url("m1.jpg"), url("m2.jpg"), url("m3.jpg");
+                    background-size:200px 120px, 110px 60px, 110px 60px;
+                    background-position:0px 0px, 210px 0px, 210px 70px;
+                }
+                /*Background 2 */
+                16%{
+                    width: 320px;   height: 320px;
+                    background-image: url("b1.jpg"), url("b2.jpg"), url("b3.jpg");
+                    background-size:320px 150px, 150px 150px, 150px 150px;
+                    background-position: 0px 0px,0px  170px, 170px 170px;
+                }
+                44%{
+                    width: 320px;   height: 320px;
+                    background-image: url("b1.jpg"), url("b2.jpg"), url("b3.jpg");
+                    background-size:320px 150px, 150px 150px, 150px 150px;
+                    background-position: 0px 0px,0px  170px, 170px 170px;
+                }
+                /* Background 3*/
+                49%{
+                    width: 320px;   height: 320px;
+                    background-image: url("a1.jpg"), url("a2.jpg"), url("a3.jpg");
+                    background-size:150px 150px, 150px 150px, 150px 150px;
+                    background-position:0px 80px, 170px 0px, 170px 170px;
+                }
+                79%{
+                    width: 320px;   height: 320px;
+                    background-image: url("a1.jpg"), url("a2.jpg"), url("a3.jpg");
+                    background-size:150px 150px, 150px 150px, 150px 150px;
+                    background-position:0px 80px, 170px 0px, 170px 170px;
+                }
+                /* Background 1 */
+                84%{
+                    width: 320px;   height: 120px;
+                    background-image: url("m1.jpg"), url("m2.jpg"), url("m3.jpg");
+                    background-size:200px 120px, 110px 60px, 110px 60px;
+                    background-position:0px 0px, 210px 0px, 210px 70px;
+                }
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div1">
+            <div class="bg"></div>
+        </div>
+        <footer>
+            This demo is created by Adarsh Chavhan. <br>Images are just used for learnig purpose only. 
+        </footer>
+    </body>
+</html>
